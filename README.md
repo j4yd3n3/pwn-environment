@@ -10,3 +10,4 @@ Now you can run using the following command which also mounts the files from you
 ```
 docker run -it --rm --privileged --security-opt seccomp:unconfined --network host -v "${PWD}:/ctf" [your image name]
 ```
+Set an alias inside of .bashrc if you want quick access to the environment e.g `echo 'alias pwn-env="docker run -it --rm --privileged --security-opt seccomp:unconfined --network host -v \"\${PWD}:/ctf\" pwn-env"' >> ~/.bashrc`

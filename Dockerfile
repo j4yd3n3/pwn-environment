@@ -79,6 +79,8 @@ RUN git clone https://github.com/radareorg/radare2 /opt/radare2 && \
 # RUN wget -q https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_11.0.1_build/ghidra_11.0.1_PUBLIC_20240130.zip -O /tmp/ghidra.zip && \
 #     unzip /tmp/ghidra.zip -d /opt && rm /tmp/ghidra.zip
 
+#TMUX settings
+RUN echo 'set -g mouse on' >> /root/.tmux.conf
 
 # Set up workspace
 WORKDIR /ctf
